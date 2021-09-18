@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel ="shortcut icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVF3ZnMnnMEUTiQgqH-4UAXQQ0ET5EIA1VkaFio24agXRvehehS1VncLFa8YiLcEibaQQ&usqp=CAU">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="js/booking.js"></script>
+
+</head>
+<body>
+    <section id="navbar">
+        <header>
+<a href="#" class="logo"> <i class="fas fa-archway"></i> Travel Gate</a>
+            <nav>
+                <a href ="#home" class="active">HOME</a>
+                <a href ="hotel.html">Hotels</a>
+                <a href ="#about"> About</a>
+                <a href ="#activites">Activities</a>
+                <a href ="#booking">Booking</a>
+                <a href ="#contact-us">Contact us</a>
+            </nav>
+            <div class="icons">
+              <i class="fas fa-bars" id="menu-bars"></i>
+              </div>
+        </header>
+    </section>
+    <section id="home">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                    <img src="pic2.jpg" alt="1">
+                </div>
+                <div class="slide">
+                    <img src="pic1.jpg" alt="2">
+                </div>
+                <div class="slide">
+                    <img src="pic4.jpg" alt="3">
+                </div>
+                <div class="slide">
+                    <img src="pic3.jpg" alt="4">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+<div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+</div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about">
+            <div class="intro">
+                <h1>About</h1>
+            <p> why choose us ?</p>
+            </div>
+            <div class="details">
+           <div class="image">
+                <img src="pp.jpg">
+             <p> Engineer/Omar Mourad</p>
+        </div>
+           <div class="talk">
+            <h1>the best booking website in the country</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime sequi harum! Eligendi illum ea praesentium blanditiis quod quisquam numquam provident eius dignissimos nisi doloribus ipsa, repudiandae consequatur minus voluptate!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, error accusamus asperiores ipsam molestias laborum non ,error accusamus asperiores ipsam molestias  </p>
+            <div class="btns">
+                <i>Easy booking</i>
+                <i>Easy payment</i>
+                <i>Good serves</i>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="activites">
+        <div class="activites">
+            <div class="container">
+                <div class="image-gallary">
+            <div class="item-a">
+        <h1>Activities</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet blanditiis asperiores repellat odit, laborum similique, repudiandae soluta aperiam voluptatibus </p>
+    </div>
+        <div class="gallary-item1">
+<img src="relax.jpg">
+</div>
+<div class="gallary-item2">
+    <img src="surf.jpg">
+    </div>
+    <div class="gallary-item3">
+        <img src="dinning.jpg">
+        </div>
+            <div class="gallary-item4">
+                <img src="jump.jpg">
+                </div>
+                <div class="gallary-item5">
+                    <img src="spa.jpg">
+                    </div>
+                </div>
+                    </div>
+        </div>
+</section>   
+<section class="booking" id="booking">
+    <h3 class="sub-heading"> booking now </h3>
+    <h1 class="heading"> free and fast </h1>
+    <form action="">
+        <div class="inputBox">
+            <div class="input">
+                <span>your name</span>
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="input">
+                <span>your number</span>
+                <input type="number" placeholder="enter your number">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your Booking</span>
+                <input type="text" placeholder="enter hotel name">
+            </div>
+            <div class="input">
+                <span>additional Offers</span>
+                <input type="test" placeholder="type of offer">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>how much</span>
+                <input type="number" placeholder="how many room">
+            </div>
+            <div class="input">
+                <span>date and time</span>
+                <input type="datetime-local">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your address</span>
+                <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <span>your message</span>
+                <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <input type="submit" value="Booking now" class="btn">
+
+    </form>
+</section>
+<section class="footer" id ="contact-us">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#"><i class="flag flag-china"> china</i></a>
+            <br>
+            <a href="#"><i class="flag flag-poland"></i> poland</a>
+            <br>
+            <a href="#"><i class="flag flag-uae"></i> uae</a>
+            <br>
+            <a href="#"><i class="flag flag-us"></i> usa</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">+111-222-3333</a>
+            <a href="#">shaikhanas@gmail.com</a>
+            <a href="#">anasbhai@gmail.com</a>
+            <a href="#">mumbai, india - 400104</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook"></i></a><br>
+            <a href="#"><i class="fab fa-instagram"></i></a><br>
+            <a href="#"><i class="fab fa-linkedin"></i></i></a>
+        </div>
+
+    </div>
+    <hr>
+    <div class="credit"> copyright @ 2021 by <span>mr. web designer</span> </div>
+
+</section>
+
+<!-- footer section ends -->
+
+    <script src="booking.js"></script>
+</body>
+</html>

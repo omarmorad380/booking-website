@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Zilla+Slab:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Zilla+Slab:ital,wght@1,300&display=swap');
+
+*{
+    font-family: 'Zilla slab', sans-serif;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+/*nav start*/
+#navbar{
+    height: 60px;
+}
+nav{
+    word-spacing: 10px;
+}
+header a {
+    text-decoration: none;
+    color:black;
+    font-size: 25px;
+
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+nav a.active,
+nav a:hover {
+    color:brown;
+    background-color:burlywood  ;
+}
+header .icons i:hover {
+    color: cornflowerblue;
+transform: rotate(360deg);
+}
+.icons{
+  display: none;
+}
+/*nav end*/
+/* card start*/
+.book {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+  }
+  .product-quantity{
+      display: flex;
+      justify-content: space-between;
+  }
+  .product-quantity p {
+margin-top: 10px;  
+}
+  .shape{
+      display: flex;
+      justify-content: space-between;
+  }
+  .total{
+      display: flex;
+justify-content: space-between;
+  }
+  #plus,#minus{
+      background-color: white;
+  }
+   button:hover{
+      color: teal;
+    
+  }
+  /*
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-body a {
+    background-color: #3d83df;
+    color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 1.1666666667em 1.5em;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-size: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    margin-bottom: 60px;
+    margin-top: 10px;
+  }
+  .card-body h5 {
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.6666666667;
+    padding: 1.1111111111em;
+  }
+  .card-img-top {
+    border-radius: 5px;
+  } */
+/*card end*/
