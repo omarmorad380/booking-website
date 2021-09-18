@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Zilla+Slab:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Zilla+Slab:ital,wght@1,300&display=swap');
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+*{
+        font-family: 'Zilla slab', sans-serif;
+        margin:0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none; border:none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+    }
+
+    body{
+        width:100%;
+    
+    }
+    /* header start */
+
+    nav{
+        word-spacing: 10px;
+    }
+   header a {
+        text-decoration: none;
+        color:black;
+        font-size: 25px;
+
+    }
+    header{
+        position: fixed;
+        top:0;left:0;right:0;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav a.active,
+    nav a:hover {
+        color:brown;
+        background-color:burlywood  ;
+    }
+    .icons{
+        display: none;
+    }
+    header .icons i:hover {
+        color: cornflowerblue;
+    transform: rotate(360deg);
+}
+    /* header end */
+    /*home start */
+.slider{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.slides{
+    width:500%;
+    height:auto;
+    display: flex;
+  
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width:20%;
+    transition: 2s;
+}
+.slide img{
+    width:100%;
+    height: 600px;
+} 
+.navigation-manual{
+    position: absolute;
+    width:100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: black;
+}
+#radio1:checked ~ .first{
+margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+
+}
+    /*home end */
+/*about start*/
+#about{
+    height: 550px;
+}
+.intro {
+    text-align: center;
+    color:#192a56;
+    border-color: #192a56 solid;
+    word-spacing: 0;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+}
+.details img{
+    width:300px;
+    height:300px;
+    border-radius: 150px;
+}
+.image p{
+margin-left: 50px;
+font-weight: bolder;
+font-size: 20px;
+}
+.talk{
+    width: 700px;
+}
+.btns{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    
+}
+.btns i{
+    background-color: #192a56;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btns i:hover{
+    cursor: pointer;
+    color:white;
+    background-color: slategrey;
+
+}
+.btns :not(:first-child){
+    margin-left:20px;
+}
+/*about end*/
+/*activites start*/
+#activites{
+    height: 800px;
+}
+
+.container{
+    width: 100%;
+    max-width: 120rem;
+    margin:auto;
+    padding: 0 1.5rem;
+
+}
+.image-gallary{
+    
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5,150px);
+    grid-template-rows: auto;
+    grid-gap: 15px;
+        grid-template-areas: 
+        'cor cor img1 img1 img2'
+        'img3  img3 img4 img4 img2'
+        'img3 img3 img4 img4 img5'
+        ;
+   
+}
+.item-a{
+border-radius: 10px;
+    grid-area: cor;
+}
+.gallary-item1{
+    grid-area: img1;
+}
+.gallary-item2{
+    
+    grid-area: img2;
+}
+.gallary-item3{
+    grid-area: img3;
+    
+}
+.gallary-item4{
+    grid-area: img4;
+   
+}
+.gallary-item5{
+    grid-area: img5;
+}
+
+.image-gallary img{
+    width: 100%;
+    height: 100%;
+
+}
+/*activites end*/
+/* booking start*/
+#booking{
+    width: 100%;
+    text-align:center;
+}
+.booking form{
+    max-width:800px;
+    border-radius: .5rem;
+    box-shadow: black;
+    border:.1rem solid rgba(0,0,0,.2);
+    background:#fff;
+    padding:1.5rem;
+    margin:0 auto;
+}
+
+.booking form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.booking form .inputBox .input{
+    width:49%;
+}
+
+.booking form .inputBox .input span{
+    display:block;
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:var(--light-color);
+}
+
+.booking form .inputBox .input input,
+.booking form .inputBox .input textarea{
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width:100%;
+}
+
+.booking form .inputBox .input input:focus,
+.booking form .inputBox .input textarea:focus{
+    border:.1rem solid var(--green);
+}
+
+.booking form .inputBox .input textarea{
+    height:20rem;
+    resize: none;
+}
+
+.booking form .btn{
+    background-color: #192a56;
+    margin-top: 0;
+    color: white;
+}
+/*booking end */
+/*contact us start*/
+.footer .box-container{
+    display:grid;
+    grid-template-columns: repeat(3,200px);
+   justify-content: center;
+
+}
+.box{
+    text-align: center;
+}
+.box a{
+    text-decoration: none;
+    color: black;
+}
+/*contact us end*/
+.credit{
+    text-align:center;
+    font-size:25px;
+}
+.footer .credit span{
+    color:lightseagreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media quiery start*/
+@media(max-width:768px){
+    .icons{
+        display: none;
+    }
+    header .icons i:hover {
+        color: cornflowerblue;
+    transform: rotate(360deg);
+}
+    nav{
+        display: inline-block;
+        word-spacing: 5px;
+        width: 70%;
+    }
+
+    .image{
+        width:350px;
+        text-align: center;
+    }
+    .details img{
+        margin-left: 5px; ;
+        width:300px;
+        height:300px;
+        border-radius: 150px;
+    }
+    .image p{
+        margin-left:90px ;
+    width: 200px;
+    }  
+    .btns :not(:first-child){
+        margin-left:15px;
+    }
+    /*about end*/
+    /*activites start*/
+    #activites{
+        height: 800px;
+    }
+    .image-gallary{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4,150px);
+        grid-template-rows: auto;
+        grid-gap: 15px;
+            grid-template-areas: 
+            'cor cor img1 img1'
+            'img2 img2 img3 img3 '
+            'img4 img4 img5 img5'
+            ;
+       
+    }
+    .image-gallary img{
+        height: 100%;
+    
+    }
+    /*activites end*/
+    /* booking start*/
+    #booking{
+        margin-top: 400px;
+    }
+}
+        @media(max-width:425px){
+            nav a{ 
+                display: none;
+            }
+            header .icons i:hover {
+                color: cornflowerblue;
+            transform: rotate(360deg);
+        }
+            
+            nav{
+                display: inline-block;
+                word-spacing: 5px;
+                width: 70%;
+            }
+        
+            .image{
+                width:100%;
+                text-align: center;
+            }
+            .details img{
+                margin-left: 5px; ;
+                width:300px;
+                height:300px;
+                border-radius: 150px;
+            }
+            .image p{
+                margin-left:90px ;
+            width: 200px;
+            }
+           
+            .btns :not(:first-child){
+                margin-left:15px;
+            }
+            /*about end*/
+            /*activites start*/
+            #activites{
+                height: 800px;
+            }
+            .image-gallary img{
+                width: 100%;
+                height: 100%;
+            
+            }
+            /*activites end*/
+            /* booking start*/
+            #booking{
+                margin-top: 400px;
+            }  
+        }
+/*media quiery end*/
+

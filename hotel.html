@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel ="shortcut icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVF3ZnMnnMEUTiQgqH-4UAXQQ0ET5EIA1VkaFio24agXRvehehS1VncLFa8YiLcEibaQQ&usqp=CAU">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="hotels.css">
+    <link rel="stylesheet" href="css/hotels.css">
     <title>Hotels</title>
 </head>
 <body>
@@ -30,9 +30,9 @@
     <section id="book">
         <div class="book">
         <div class="card" style="width: 18rem;">
-            <img src="hotel.jpg" class="card-img-top" alt="1">
+            <img src="res/hotel.jpg" class="card-img-top" alt="1">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">First One</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
             <ul class="list-group list-group-flush">
@@ -40,14 +40,14 @@
                   <div class="shape">
                   <h6>Single</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="fas fa-plus-circle" onclick="addSingle.call(this)"><p id="single">1</p></button>
+                      
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                       </div>
-                        <div id="price"> 20</div>
+                        <div class="price"> 20</div>
                         <div class="total">
                           <label>Total</label>
-                            <div id="product-price">0</div>
+                            <div class="product-price">0</div>
                           </div>
               </div>
             </li>
@@ -56,14 +56,13 @@
                   <div class="shape">
                 <h6>Double</h6>
                 <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                  <button class="fas fa-plus-circle" onclick="addDouble.call(this)"><p id="double">1</p></button>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 15</div>
+                    <div class="price"> 15</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
@@ -71,23 +70,22 @@
                   <div class="shape">
                 <h6>Triple</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="fas fa-plus-circle" onclick="addTriple.call(this)"><p id="triple">1</p></button>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 10</div>
+                    <div class="price"> 10</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
             </ul>       
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="hotel.jpg" class="card-img-top" alt="1">
+            <img src="res/hotel.jpg" class="card-img-top" alt="1">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Card number 2</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
             <ul class="list-group list-group-flush">
@@ -95,14 +93,14 @@
                   <div class="shape">
                   <h6>Single</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="fas fa-plus-circle" onclick="addSingle.call(this)"><p id="single">1</p></button>
+                      
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                       </div>
-                        <div id="price"> 20</div>
+                        <div class="price"> 20</div>
                         <div class="total">
                           <label>Total</label>
-                            <div id="product-price">0</div>
+                            <div class="product-price">0</div>
                           </div>
               </div>
             </li>
@@ -111,14 +109,13 @@
                   <div class="shape">
                 <h6>Double</h6>
                 <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                  <button class="fas fa-plus-circle" onclick="addDouble.call(this)"><p id="double">1</p></button>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 15</div>
+                    <div class="price"> 15</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
@@ -126,21 +123,20 @@
                   <div class="shape">
                 <h6>Triple</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="fas fa-plus-circle" onclick="addTriple.call(this)"><p id="triple">1</p></button>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 10</div>
+                    <div class="price"> 10</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
             </ul>       
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="hotel.jpg" class="card-img-top" alt="1">
+            <img src="res/hotel.jpg" class="card-img-top" alt="1">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -150,14 +146,14 @@
                   <div class="shape">
                   <h6>Single</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                       </div>
-                        <div id="price"> 20</div>
+                        <div class="price"> 20</div>
                         <div class="total">
                           <label>Total</label>
-                            <div id="product-price">0</div>
+                            <div class="product-price">0</div>
                           </div>
               </div>
             </li>
@@ -166,14 +162,14 @@
                   <div class="shape">
                 <h6>Double</h6>
                 <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 15</div>
+                    <div class="price"> 15</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
@@ -181,21 +177,21 @@
                   <div class="shape">
                 <h6>Triple</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 10</div>
+                    <div class="price"> 10</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
             </ul>       
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="hotel.jpg" class="card-img-top" alt="1">
+            <img src="res/hotel.jpg" class="card-img-top" alt="1">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -205,14 +201,14 @@
                   <div class="shape">
                   <h6>Single</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                       </div>
-                        <div id="price"> 20</div>
+                        <div class="price"> 20</div>
                         <div class="total">
                           <label>Total</label>
-                            <div id="product-price">0</div>
+                            <div class="product-price">0</div>
                           </div>
               </div>
             </li>
@@ -221,14 +217,14 @@
                   <div class="shape">
                 <h6>Double</h6>
                 <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 15</div>
+                    <div class="price"> 15</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
@@ -236,21 +232,21 @@
                   <div class="shape">
                 <h6>Triple</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 10</div>
+                    <div class="price"> 10</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
             </ul>       
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="hotel.jpg" class="card-img-top" alt="1">
+            <img src="res/hotel.jpg" class="card-img-top" alt="1">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -260,14 +256,14 @@
                   <div class="shape">
                   <h6>Single</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                       </div>
-                        <div id="price"> 20</div>
+                        <div class="price"> 20</div>
                         <div class="total">
                           <label>Total</label>
-                            <div id="product-price">0</div>
+                            <div class="product-price">0</div>
                           </div>
               </div>
             </li>
@@ -276,14 +272,14 @@
                   <div class="shape">
                 <h6>Double</h6>
                 <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 15</div>
+                    <div class="price"> 15</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
@@ -291,21 +287,21 @@
                   <div class="shape">
                 <h6>Triple</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 10</div>
+                    <div class="price"> 10</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
             </ul>       
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="hotel.jpg" class="card-img-top" alt="1">
+            <img src="res/hotel.jpg" class="card-img-top" alt="1">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -315,14 +311,14 @@
                   <div class="shape">
                   <h6>Single</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                       </div>
-                        <div id="price"> 20</div>
+                        <div class="price"> 20</div>
                         <div class="total">
                           <label>Total</label>
-                            <div id="product-price">0</div>
+                            <div class="product-price">0</div>
                           </div>
               </div>
             </li>
@@ -331,14 +327,14 @@
                   <div class="shape">
                 <h6>Double</h6>
                 <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 15</div>
+                    <div class="price"> 15</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
@@ -346,21 +342,21 @@
                   <div class="shape">
                 <h6>Triple</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 10</div>
+                    <div class="price"> 10</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
             </ul>       
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="hotel.jpg" class="card-img-top" alt="1">
+            <img src="res/hotel.jpg" class="card-img-top" alt="1">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -370,14 +366,14 @@
                   <div class="shape">
                   <h6>Single</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                       </div>
-                        <div id="price"> 20</div>
+                        <div class="price"> 20</div>
                         <div class="total">
                           <label>Total</label>
-                            <div id="product-price">0</div>
+                            <div class="product-price">0</div>
                           </div>
               </div>
             </li>
@@ -386,14 +382,14 @@
                   <div class="shape">
                 <h6>Double</h6>
                 <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 15</div>
+                    <div class="price"> 15</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
@@ -401,21 +397,21 @@
                   <div class="shape">
                 <h6>Triple</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 10</div>
+                    <div class="price"> 10</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
             </ul>       
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="hotel.jpg" class="card-img-top" alt="1">
+            <img src="res/hotel.jpg" class="card-img-top" alt="1">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -425,14 +421,14 @@
                   <div class="shape">
                   <h6>Single</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                       </div>
-                        <div id="price"> 20</div>
+                        <div class="price"> 20</div>
                         <div class="total">
                           <label>Total</label>
-                            <div id="product-price">0</div>
+                            <div class="product-price">0</div>
                           </div>
               </div>
             </li>
@@ -441,14 +437,14 @@
                   <div class="shape">
                 <h6>Double</h6>
                 <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 15</div>
+                    <div class="price"> 15</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
@@ -456,21 +452,21 @@
                   <div class="shape">
                 <h6>Triple</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 10</div>
+                    <div class="price"> 10</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
             </ul>       
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="hotel.jpg" class="card-img-top" alt="1">
+            <img src="res/hotel.jpg" class="card-img-top" alt="1">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -480,14 +476,14 @@
                   <div class="shape">
                   <h6>Single</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                       </div>
-                        <div id="price"> 20</div>
+                        <div class="price"> 20</div>
                         <div class="total">
                           <label>Total</label>
-                            <div id="product-price">0</div>
+                            <div class="product-price">0</div>
                           </div>
               </div>
             </li>
@@ -496,14 +492,14 @@
                   <div class="shape">
                 <h6>Double</h6>
                 <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 15</div>
+                    <div class="price"> 15</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
@@ -511,14 +507,14 @@
                   <div class="shape">
                 <h6>Triple</h6>
                   <div class="product-quantity">
-                    <button id="plus"><i class="fas fa-plus-circle"></i></button>
-                      <p id="quantity">0</p>
-                      <button id="minus"><i class="fas fa-minus-circle"></i></button>
+                    <button class="plus"><i class="fas fa-plus-circle"></i></button>
+                      <p class="quantity">0</p>
+                      <button class="minus"><i class="fas fa-minus-circle"></i></button>
                     </div>
-                    <div id="price"> 10</div>
+                    <div class="price"> 10</div>
                     <div class="total">
                       <label>Total</label>
-                        <div id="product-price">0</div>
+                        <div class="product-price">0</div>
                       </div>
             </div>
         </li>
@@ -526,7 +522,7 @@
           </div>
         </div>  
     </section>
-    <script src="hotels.js"></script>
+    <script src="js/hotels.js"></script>
 
 </body>
 </html>
